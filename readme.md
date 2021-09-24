@@ -14,7 +14,7 @@ Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) applicatio
 ```
 git clone https://github.com/spring-projects/spring-petclinic.git
 cd spring-petclinic
-./mvnw package -Dcheckstyle.skip -DskipTests
+./mvnw package
 docker-compose up
 java -Dspring.profiles.active=mysql -jar target/*.jar
 ```
@@ -76,7 +76,7 @@ The following items should be installed in your system:
     Then either build on the command line `./mvnw generate-resources` or using the Eclipse launcher (right click on project and `Run As -> Maven install`) to generate the css. Run the application main method by right clicking on it and choosing `Run As -> Java Application`.
 
 3) Inside IntelliJ IDEA
-    In the main menu, choose `File -> Open` and select the Petclinic [pom.xml](pom.xml). Click on the `Open` button.
+    In the main menu, choose `File -> Open` and select the Petclinic [pom.xml](pom.xml). Click on the `Open` button.
 
     CSS files are generated from the Maven build. You can either build them on the command line `./mvnw generate-resources` or right click on the `spring-petclinic` project then `Maven -> Generates sources and Update Folders`.
 
